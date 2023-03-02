@@ -22,17 +22,13 @@ strong {
 
 .max-width-wrapper {
   margin: 0 auto;
+  max-width: 800px;
 }
 
-section.max-width-wrapper {
+main {
   background-color: var(--color-gray-500);
   border-top: 8px solid var(--color-gray-300);
   padding: var(--spacing-9x) 0;
-}
-
-.max-width-wrapper > * {
-  margin: 0 auto;
-  max-width: 800px;
 }
 
 .intro-chunk {
