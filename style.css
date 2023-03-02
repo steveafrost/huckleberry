@@ -1,6 +1,8 @@
+@import "./vars.css";
+
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
@@ -9,4 +11,46 @@ body {
   padding: 0;
 }
 
-/* Add styles here! */
+h1,
+h2 {
+  margin: 0;
+}
+
+strong {
+  color: var(--color-primary);
+}
+
+.max-width-wrapper {
+  margin: 0 auto;
+}
+
+section.max-width-wrapper {
+  background-color: var(--color-gray-500);
+  border-top: 8px solid var(--color-gray-300);
+  padding: var(--spacing-9x) 0;
+}
+
+.max-width-wrapper > * {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.intro-chunk {
+  padding: var(--spacing-12x) var(--spacing-3x) var(--spacing-8x)
+    var(--spacing-3x);
+}
+
+.card {
+  background-color: var(--color-white);
+  border-bottom: 8px solid var(--color-gray-300);
+  padding: var(--spacing-1x) var(--spacing-3x);
+}
+
+.indented-heading {
+  background-color: var(--color-secondary);
+  border-bottom: 8px solid var(--color-secondary-dark);
+  padding: var(--spacing-2x) var(--spacing-4x);
+  margin-right: var(--spacing-3x);
+  margin-left: calc(var(--spacing-4x) * -1);
+  width: fit-content;
+}
